@@ -59,7 +59,7 @@ section.image > p {
 
 section#image01 {
 	background-image: url('../image/background001.jpg');
-	background-position: center right;
+	background-position: right center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;	
