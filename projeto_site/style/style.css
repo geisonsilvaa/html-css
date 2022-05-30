@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+span.symbol {
+    color: gold;
+    font-size: 5rem;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    background-image: linear-gradient(to left, #140351, #2E0353, #3E0762, #541387, #761770);
+}
+
+nav a:hover {
+    border-radius: 3px;
+    color: gold;
+    cursor: alias;
+    font-size: 1.73rem;
+    transform: scale(1.3);
+
+}
+
+.navbar {
+    position: relative;
+    padding: 10px 10px 10px 0px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: auto;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.684);
+    transition: 0.5s;
+}
+
+.content {
+    min-height: 95vh;
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentation {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing {
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.type-animation {
+    animation: bar_animation 700ms steps(40) infinite normal, typing 5s steps(50) 1s normal;
+}
+
+#main_container {
+    background-image: url(../image/programming.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+#main_container h1 {
+    color: white;
+    font-size: 5rem;
+    position: relative;
+    display: flex;
+    line-height: 7rem;
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.684);
+}
+
+a.btn {
+    position: relative;
+    display: inline-block;
+    border: 1px solid gold;
+    border-radius: 3px;
+    padding: 1.2rem;
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.8rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.684);
+    transition: 0.8s;
+    margin-top: 6rem;
+    margin-left: 5rem;
+    background-color: rgba(178, 135, 25, 0.581);
+}
+
+.btn:hover {
+    color: purple;
+    background-color: gold;
+    border: 1px solid purple;
+}
+
+#main_container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 50%;
+}
+
+/*SEÇÃO DE KEYFRAMES*/
+
+@keyframes bar_animation {
+    from {
+        border-right-color: white;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 85rem;
+    }
+}
